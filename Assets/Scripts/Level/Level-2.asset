@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bb518f2cb0b9345ac84ca0f671e5e0, type: 3}
+  m_Name: Level-2
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelNumber: 2
+  customers:
+  - customerName: Spike Spiegel
+    customerSprite: {fileID: 21300000, guid: 0e75e0f0445787646bb23066ae431204, type: 3}
+    message: Let's do something simple. This file is too large, and the place I'm
+      sending it to only accepts small files.
+    successCustomerSprite: {fileID: 21300000, guid: c7b62d1ebf884e44e89c4076e64c259c, type: 3}
+    failureCustomerSprite: {fileID: 21300000, guid: aac324c1ae63c794e824f6c392095e30, type: 3}
+    steps:
+    - taskType: protect
+      subType: 7zip
+      inputDocName: Memory
+      inputIcon: {fileID: 21300000, guid: 1a312ed2055eda14e8c3ecd0b85b2c9c, type: 3}
+      inputDetailType: 1
+      inputDetailText: 
+      inputDetailImage: {fileID: 5085327630301145873, guid: 1bdcccac881fa2a4ba50f10ddcbdeef0, type: 3}
+      successDocName: Memory.7zip
+      successIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      successDetailType: 0
+      successDetailText: See you space cowboy
+      successDetailImage: {fileID: 0}
+      failDocName: Memory.14zip
+      failIcon: {fileID: 21300000, guid: d829b0e05a3c20248a6a8a9c572d621a, type: 3}
+      failDetailType: 1
+      failDetailText: 
+      failDetailImage: {fileID: 5085327630301145873, guid: 1bdcccac881fa2a4ba50f10ddcbdeef0, type: 3}
+      anotherDoc1Name: Memory.3.5zip
+      anotherDoc1Icon: {fileID: 21300000, guid: d829b0e05a3c20248a6a8a9c572d621a, type: 3}
+      anotherDoc1DetailType: 1
+      anotherDoc1Text: 
+      anotherDoc1Image: {fileID: 5085327630301145873, guid: 1bdcccac881fa2a4ba50f10ddcbdeef0, type: 3}
+      anotherDoc2Name: Memory.zip
+      anotherDoc2Icon: {fileID: 21300000, guid: d829b0e05a3c20248a6a8a9c572d621a, type: 3}
+      anotherDoc2DetailType: 1
+      anotherDoc2Text: 
+      anotherDoc2Image: {fileID: 5085327630301145873, guid: 1bdcccac881fa2a4ba50f10ddcbdeef0, type: 3}
+      isFinalStep: 1
+    finalSuccessMessage: Well done!!!
+    finalFailMessage: It seems you still need to practice more.
+  - customerName: Ben
+    customerSprite: {fileID: 4083310782223419755, guid: 98c9b00ce61b2c94aab2c8c38e875f86, type: 3}
+    message: I think my computer is acting weird. I type my password and get weird
+      ads immediately.
+    successCustomerSprite: {fileID: -4824533408569511068, guid: 280487026f538e0428aa413cea549ac1, type: 3}
+    failureCustomerSprite: {fileID: 8609385336908004008, guid: 7bfc57181391c344e8402a460f24ac36, type: 3}
+    steps:
+    - taskType: protect
+      subType: Anti-Spyware Tools
+      inputDocName: Browser_Logs
+      inputIcon: {fileID: 21300000, guid: e73de7dc8ec841145a0f11ba3d959a3e, type: 3}
+      inputDetailType: 0
+      inputDetailText: Suspicious extension recording keystrokes and browsing habits.
+      inputDetailImage: {fileID: 0}
+      successDocName: Clean_Browser
+      successIcon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      successDetailType: 0
+      successDetailText: Spyware removed. Keylogging stopped.
+      successDetailImage: {fileID: 0}
+      failDocName: Identity_Theft
+      failIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      failDetailType: 0
+      failDetailText: Privacy breached. Anti-Spyware was needed.
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Spyware
+      anotherDoc1Icon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: Privacy breached. Anti-Spyware was needed.
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Anti
+      anotherDoc2Icon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Privacy breached. Anti-Spyware was needed.
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: The keylogger is gone! I feel safe again.
+    finalFailMessage: They still know my passwords! You used the wrong tool.
+  - customerName: Satoru Tatsuya
+    customerSprite: {fileID: 6276655838069933930, guid: 8d9737cb349480a4084058f45371be9f, type: 3}
+    message: I downloaded a 'Free Game Cheat' program. It looks legitimate, but now
+      my passwords are being stolen.
+    successCustomerSprite: {fileID: 368061110730844245, guid: 172164b7287daa545b9cba6dd6f5fccb, type: 3}
+    failureCustomerSprite: {fileID: 952451213517086935, guid: 9a3aaff6f24e6c5498f5edbe83ff8b42, type: 3}
+    steps:
+    - taskType: check
+      subType: Check
+      inputDocName: Game_Cheat.exe
+      inputIcon: {fileID: 21300000, guid: e73de7dc8ec841145a0f11ba3d959a3e, type: 3}
+      inputDetailType: 0
+      inputDetailText: "\u2191\u2191\u2193\u2193\u2190\u2192\u2190\u2192BA START"
+      inputDetailImage: {fileID: 0}
+      successDocName: Scan_Result
+      successIcon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      successDetailType: 0
+      successDetailText: 'Result: Malicious code hidden inside legitimate-looking
+        program'
+      successDetailImage: {fileID: 0}
+      failDocName: Cheat code
+      failIcon: {fileID: 21300000, guid: c7e29d58e31c43e4885bf6183e65f8c4, type: 3}
+      failDetailType: 1
+      failDetailText: 
+      failDetailImage: {fileID: 21300000, guid: c989d5343468a8e45bbbf78975dd1dde, type: 3}
+      anotherDoc1Name: Cheating.exe
+      anotherDoc1Icon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 'Result: Non code hidden inside legitimate-looking program'
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Cheat.exe
+      anotherDoc2Icon: {fileID: 21300000, guid: c7e29d58e31c43e4885bf6183e65f8c4, type: 3}
+      anotherDoc2DetailType: 1
+      anotherDoc2Text: 
+      anotherDoc2Image: {fileID: 21300000, guid: 2834e3c9d636b3b4f93299e29f3b35f0, type: 3}
+      isFinalStep: 0
+    - taskType: kill
+      subType: Trojan
+      inputDocName: Scan_Result
+      inputIcon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      inputDetailType: 0
+      inputDetailText: 'Result: Malicious code hidden inside legitimate-looking program'
+      inputDetailImage: {fileID: 0}
+      successDocName: System_Safe
+      successIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      successDetailType: 0
+      successDetailText: 'Pc Status : All Well'
+      successDetailImage: {fileID: 0}
+      failDocName: System_Failure
+      failIcon: {fileID: 21300000, guid: 1ddee50f44e977d42a2cf28dfaa294b5, type: 3}
+      failDetailType: 0
+      failDetailText: 'Pc Status : Suspicious malware avaialble'
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: System
+      anotherDoc1Icon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 'PC Status: 50% damaged'
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: System Down
+      anotherDoc2Icon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 'PC Status: 50% damaged'
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: You were right, it was a fake program! Thanks for cleaning
+      my PC.
+    finalFailMessage: You missed the hidden threat! My account has been hacked.
+  taskDatabase: {fileID: 11400000, guid: e39059beda5348549bfa9164de0255bb, type: 2}

@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bb518f2cb0b9345ac84ca0f671e5e0, type: 3}
+  m_Name: Level-8
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelNumber: 8
+  customers:
+  - customerName: Eren Yeager
+    customerSprite: {fileID: 5429277852118830219, guid: fbf51969664f0f640a9b374382b7e542, type: 3}
+    message: Help me kill those things that keep multiplying on their own.
+    successCustomerSprite: {fileID: -3660695801757314830, guid: 3d995ab7272d1294cbb0e4119e609f58, type: 3}
+    failureCustomerSprite: {fileID: 4318538948608732238, guid: 718a72e600ae05c44845b7dd09a6e141, type: 3}
+    steps:
+    - taskType: kill
+      subType: Worm
+      inputDocName: The world
+      inputIcon: {fileID: 21300000, guid: 1a312ed2055eda14e8c3ecd0b85b2c9c, type: 3}
+      inputDetailType: 1
+      inputDetailText: 
+      inputDetailImage: {fileID: 1643084082697691526, guid: 3ed05af9c282a2d43b57cc6d30c2d193, type: 3}
+      successDocName: Real Ending
+      successIcon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      successDetailType: 0
+      successDetailText: (True Ending Achieved) Eren's friends have all found happiness,
+        and he will never again be a slave to freedom.
+      successDetailImage: {fileID: 0}
+      failDocName: Bad Ending
+      failIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      failDetailType: 0
+      failDetailText: (Bad ending achieved) Eren becomes a free slave, and his friends
+        will spend the rest of their lives in regret.
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Marley
+      anotherDoc1Icon: {fileID: 21300000, guid: 1f44d65f525f57c439b28ffc3395bca3, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 'Sheilder Titan '
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Paladin
+      anotherDoc2Icon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Giant Titan
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Thank you very much.... I can finally rest now...
+    finalFailMessage: HAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHA
+  - customerName: Joe
+    customerSprite: {fileID: 808941053944822259, guid: 5f921815a92343c4abb32ebfb56dbd48, type: 3}
+    message: I am launching a new website. Help me BUILD A WALL.
+    successCustomerSprite: {fileID: 6302903683848228514, guid: 377055c6b903b9546a2c1ec1717573d5, type: 3}
+    failureCustomerSprite: {fileID: 8480672254281920722, guid: 595901a6da1fdda48a56d9cf3f45f0cc, type: 3}
+    steps:
+    - taskType: protect
+      subType: Firewall
+      inputDocName: Website
+      inputIcon: {fileID: 21300000, guid: a71124bccca592b419a0218c4376e626, type: 3}
+      inputDetailType: 0
+      inputDetailText: 'Policy: Allow All. Security: None.'
+      inputDetailImage: {fileID: 0}
+      successDocName: Website with security
+      successIcon: {fileID: 21300000, guid: 463da780a411cf8459dc3fbc0ec13279, type: 3}
+      successDetailType: 1
+      successDetailText: 
+      successDetailImage: {fileID: -8392436768923278058, guid: 2616df98e2a3b674dbdd95fedb903520, type: 3}
+      failDocName: Open_Door
+      failIcon: {fileID: 21300000, guid: 05d914bcced146f40924d76aca21aeec, type: 3}
+      failDetailType: 1
+      failDetailText: 
+      failDetailImage: {fileID: 4622496822143911329, guid: 2616df98e2a3b674dbdd95fedb903520, type: 3}
+      anotherDoc1Name: Love
+      anotherDoc1Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc1DetailType: 1
+      anotherDoc1Text: 
+      anotherDoc1Image: {fileID: -608986742551797729, guid: 2616df98e2a3b674dbdd95fedb903520, type: 3}
+      anotherDoc2Name: Star
+      anotherDoc2Icon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      anotherDoc2DetailType: 1
+      anotherDoc2Text: 
+      anotherDoc2Image: {fileID: 1654468490791628367, guid: 2616df98e2a3b674dbdd95fedb903520, type: 3}
+      isFinalStep: 1
+    finalSuccessMessage: Thank you very much. You're as fast as the walls between
+      East and West Germany were built.
+    finalFailMessage: I can't publish my website now.
+  - customerName: Illya
+    customerSprite: {fileID: 3240748157499385524, guid: 66b637003be327e4b97d7c7d6190fba6, type: 3}
+    message: Our bandwidth usage hits 100% every night at 3 AM when nobody is working.
+      Something is eating the network..
+    successCustomerSprite: {fileID: 1200101559065161136, guid: e2f18121be5525e4e9474d1a68e6e9a9, type: 3}
+    failureCustomerSprite: {fileID: 3628713785343968016, guid: 26f73180417a6714e98cd9f9e3bc72dc, type: 3}
+    steps:
+    - taskType: check
+      subType: Check
+      inputDocName: Traffic_Log_3AM
+      inputIcon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      inputDetailType: 0
+      inputDetailText: 'Outgoing packets to random IP addresses. Packet content:
+        Replication code.'
+      inputDetailImage: {fileID: 0}
+      successDocName: Maliciouse found
+      successIcon: {fileID: 21300000, guid: e73de7dc8ec841145a0f11ba3d959a3e, type: 3}
+      successDetailType: 0
+      successDetailText: 'Analysis: Self-propagating malware detected.'
+      successDetailImage: {fileID: 0}
+      failDocName: Log_Ignored
+      failIcon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      failDetailType: 0
+      failDetailText: No anomaly flagged.
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Network_Map
+      anotherDoc1Icon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      anotherDoc1DetailType: 1
+      anotherDoc1Text: 
+      anotherDoc1Image: {fileID: 21300000, guid: 766b5f3bbf83c9a40be669fa5766f984, type: 3}
+      anotherDoc2Name: Clean_Log
+      anotherDoc2Icon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Normal and Safe
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 0
+    - taskType: kill
+      subType: Worm
+      inputDocName: Maliciouse found
+      inputIcon: {fileID: 21300000, guid: e73de7dc8ec841145a0f11ba3d959a3e, type: 3}
+      inputDetailType: 0
+      inputDetailText: 'Analysis: Self-propagating malware detected.'
+      inputDetailImage: {fileID: 0}
+      successDocName: Network_Clear
+      successIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      successDetailType: 0
+      successDetailText: Worm isolated and removed successfully
+      successDetailImage: {fileID: 0}
+      failDocName: Still_Slow
+      failIcon: {fileID: 21300000, guid: d829b0e05a3c20248a6a8a9c572d621a, type: 3}
+      failDetailType: 0
+      failDetailText: No anomaly flagged.
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Network_Map
+      anotherDoc1Icon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      anotherDoc1DetailType: 1
+      anotherDoc1Text: 
+      anotherDoc1Image: {fileID: 21300000, guid: 766b5f3bbf83c9a40be669fa5766f984, type: 3}
+      anotherDoc2Name: Clean_Log
+      anotherDoc2Icon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Normal and Safe
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: A worm! I knew it wasn't a glitch. Bandwidth is normal now.
+    finalFailMessage: The network is still clogged. You didn't find the root cause.
+  taskDatabase: {fileID: 11400000, guid: e39059beda5348549bfa9164de0255bb, type: 2}

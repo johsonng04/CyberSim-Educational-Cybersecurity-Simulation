@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bb518f2cb0b9345ac84ca0f671e5e0, type: 3}
+  m_Name: Level-3
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelNumber: 3
+  customers:
+  - customerName: Frank Gallagher
+    customerSprite: {fileID: -7907376317017415427, guid: 8804ae2c8fcf1eb40ae75240bc752bde, type: 3}
+    message: I don't have the professional equipment to translate this sentence,
+      please help me. Of course, it has to be free, as a way of helping this poor
+      soul ravaged by alcohol.
+    successCustomerSprite: {fileID: 4704130289543587767, guid: 860fa1db26fd7b048ae42f5a0ea48ffe, type: 3}
+    failureCustomerSprite: {fileID: -2658584792528253058, guid: b0b54095d71b83e4680adc261635ae23, type: 3}
+    steps:
+    - taskType: decrypt
+      subType: Base64
+      inputDocName: '"Milk of the Gods"'
+      inputIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      inputDetailType: 0
+      inputDetailText: MTMwIHByb29mIGJlZXIgbWFkZSB3aXRoIGJhY29uIG9uIGEgaG9tZSBicmV3IHN5c3RlbS4gKEZvciByZWZlcmVuY2Ugb25seSkK
+      inputDetailImage: {fileID: 0}
+      successDocName: '"Milk of the Gods" recipe'
+      successIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      successDetailType: 0
+      successDetailText: 130 proof beer made with bacon on a home brew system. (For
+        reference only)
+      successDetailImage: {fileID: 0}
+      failDocName: '"Milk of the Devil" secret'
+      failIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      failDetailType: 0
+      failDetailText: 0 proof beer made with bacon on a home brew system. (For reference
+        only)
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: '"Milk of the Devil" secret recipe'
+      anotherDoc1Icon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 0 proof beer made with bacon on a home brew system. (For reference
+        only)
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: '"Milk of the Heaven"'
+      anotherDoc2Icon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 0 proof beer made with bacon on a home brew system. (For reference
+        only)
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Oh my god! You are impresive. Thank you very much.
+    finalFailMessage: Oh my god! You should go back and study what type is this.
+  - customerName: Yua Mikimi
+    customerSprite: {fileID: -6543948665197269163, guid: 444b2e25a3698684c93613e1c3727873, type: 3}
+    message: Decode this message using the Caesar method. The shift is 5.
+    successCustomerSprite: {fileID: -3529031095333799562, guid: 1916a578a09960d4e9f70d9701356dea, type: 3}
+    failureCustomerSprite: {fileID: 791228759276609840, guid: 8d68011cd98eb864197d50337bf9d2b2, type: 3}
+    steps:
+    - taskType: encrypt
+      subType: Caesar cipher
+      inputDocName: Note.txt
+      inputIcon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      inputDetailType: 0
+      inputDetailText: Hello World! I love u so much!
+      inputDetailImage: {fileID: 0}
+      successDocName: Noted.txt
+      successIcon: {fileID: 21300000, guid: e73de7dc8ec841145a0f11ba3d959a3e, type: 3}
+      successDetailType: 0
+      successDetailText: HW!eueoIuclrlshlloo!odvm
+      successDetailImage: {fileID: 0}
+      failDocName: Noted.txt.file
+      failIcon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      failDetailType: 0
+      failDetailText: SGVsbG8gV29ybGQhIEkgbG92ZSB1IHNvIG11Y2gh
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Noted.txt.exe
+      anotherDoc1Icon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: SGVsbG8gV29ybGQhSWxvdmUgdSBzbyBtdWNoIQ==
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Noted.txt.jpg
+      anotherDoc2Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: SGVsbG8gV29ybGQhSWxvdmV1IHNvbXVjaCE=
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Thank you <3
+    finalFailMessage: That makes no sense. Did you check the subtype?
+  - customerName: Elon Mask
+    customerSprite: {fileID: -1921313308582612855, guid: 42f6bc84a2c73d94b9816754dcb8e2d9, type: 3}
+    message: Interpretation it and change it to . and -
+    successCustomerSprite: {fileID: -7153391686366161297, guid: 06ee6e3cf639b66409df1090d2505f45, type: 3}
+    failureCustomerSprite: {fileID: 8196651707766959896, guid: 4a4f7774493e6ca4db80a2dd86d937cd, type: 3}
+    steps:
+    - taskType: decrypt
+      subType: Base64
+      inputDocName: Secret_Msg
+      inputIcon: {fileID: 21300000, guid: 05d914bcced146f40924d76aca21aeec, type: 3}
+      inputDetailType: 0
+      inputDetailText: MTAwMCB5ZWFycyBvbGQgaXMgc3VjaCBhIHlvdW5nIGFnZSBpZiB5b3UgaGFwcGVuIHRvIGJlIGEgaHVtYW4u
+      inputDetailImage: {fileID: 0}
+      successDocName: Message
+      successIcon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      successDetailType: 0
+      successDetailText: 1000 years old is such a young age if you happen to be a
+        human.
+      successDetailImage: {fileID: 0}
+      failDocName: Message with answer
+      failIcon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      failDetailType: 0
+      failDetailText: 1000 years old is such a young age if you happen to be a dog.
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Message  of truth
+      anotherDoc1Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 100 years old is such a old age to die.
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Message of the final answer
+      anotherDoc2Icon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 100 years old is such a old age to die.
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 0
+    - taskType: encrypt
+      subType: Morse
+      inputDocName: Message
+      inputIcon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      inputDetailType: 0
+      inputDetailText: 1000 years old is such a young age if you happen to be a human.
+      inputDetailImage: {fileID: 0}
+      successDocName: S_Message
+      successIcon: {fileID: 21300000, guid: 5519830b96d557e42ae5074aec086924, type: 3}
+      successDetailType: 0
+      successDetailText: '.---- ----- ----- -----
+
+        -.-- . .- .-. ...
+
+        ---
+        .-.. -..
+
+        .. ...
+
+        ... ..- -.-. ....
+
+        .-
+
+        -.--
+        --- ..- -. --.
+
+        .- --. .
+
+        .. ..-.
+
+        -.-- --- ..-
+
+        ....
+        .- .--. .--. . -.
+
+        - ---
+
+        -... .
+
+        .-
+
+        ....
+        ..- -- .- -. .-.-.-'
+      successDetailImage: {fileID: 0}
+      failDocName: F_Message
+      failIcon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      failDetailType: 0
+      failDetailText: '.---- ----- ----- -----
+
+        -.-- . .- .-. ...
+
+        ---
+        .-.. -..
+
+        .. ...
+
+        ... ..- -.-. ....
+
+        .-
+
+        -.--
+        --- ..- -. --.
+
+        .- --. .
+
+        .. ..-.
+
+        -.-- --- ..-
+
+        ....
+        .- .--. .--. . -.
+
+        - ---
+
+        -... .
+
+        .-
+
+        ....
+        ..- -- .- -. .-.-.-'
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: E_Message
+      anotherDoc1Icon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: '-.-- --- ..-
+
+        .... .- .--. .--. . -.
+
+        - ---
+
+        -...
+        .'
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: D_Message
+      anotherDoc2Icon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: '.-
+
+        .... ..- -- .- -. .-.-.-'
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Very good! Thx for help me find the answer.
+    finalFailMessage: Wow! I can do it myself when i was 3 years old.
+  taskDatabase: {fileID: 11400000, guid: e39059beda5348549bfa9164de0255bb, type: 2}

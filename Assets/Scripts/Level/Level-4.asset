@@ -1,0 +1,310 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bb518f2cb0b9345ac84ca0f671e5e0, type: 3}
+  m_Name: Level-4
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelNumber: 4
+  customers:
+  - customerName: David Martinez
+    customerSprite: {fileID: 2197610515192270894, guid: 735afcb3d01323146902b8465d776403, type: 3}
+    message: Hi, help me find the deep layer that name "Layer 3"
+    successCustomerSprite: {fileID: -9061608486342329968, guid: 939b8b02afa8caa4f993a8762a48f0f8, type: 3}
+    failureCustomerSprite: {fileID: 7770284711937048341, guid: f88275857b7d1aa4ea46ee7ed5764bb9, type: 3}
+    steps:
+    - taskType: check
+      subType: Check
+      inputDocName: 'Document '
+      inputIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      inputDetailType: 0
+      inputDetailText: '-Arasaka
+
+        -Militech
+
+        -Trauma Team
+
+        -Biotechnica
+
+        -Kang
+        Tao
+
+        -Night Corp
+
+        -Kiroshi
+
+        -Zetatech'
+      inputDetailImage: {fileID: 0}
+      successDocName: Layer 1
+      successIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      successDetailType: 1
+      successDetailText: 
+      successDetailImage: {fileID: 21300000, guid: 7b12c09b5dd7e3f4ab4d2dc2aa29f4e4, type: 3}
+      failDocName: Layer 1.1
+      failIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      failDetailType: 0
+      failDetailText: '!@#$#%^&*(*&^%$#@'
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Layer 1.1.1
+      anotherDoc1Icon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 123456789
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Layer 1.1.1.1
+      anotherDoc2Icon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      anotherDoc2DetailType: 1
+      anotherDoc2Text: 
+      anotherDoc2Image: {fileID: 21300000, guid: e73de7dc8ec841145a0f11ba3d959a3e, type: 3}
+      isFinalStep: 0
+    - taskType: check
+      subType: Check
+      inputDocName: Layer 1
+      inputIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      inputDetailType: 1
+      inputDetailText: 
+      inputDetailImage: {fileID: 21300000, guid: 7b12c09b5dd7e3f4ab4d2dc2aa29f4e4, type: 3}
+      successDocName: Layer 2
+      successIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      successDetailType: 1
+      successDetailText: 
+      successDetailImage: {fileID: 21300000, guid: 2834e3c9d636b3b4f93299e29f3b35f0, type: 3}
+      failDocName: Layer 2.5
+      failIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      failDetailType: 0
+      failDetailText: Almost to Layer 3
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Layer 2.7
+      anotherDoc1Icon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: This is Layer 2.7. You should not be here.
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Layer 2.9
+      anotherDoc2Icon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Almost to Layer 3.5
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 0
+    - taskType: check
+      subType: Check
+      inputDocName: Layer 2
+      inputIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      inputDetailType: 1
+      inputDetailText: 
+      inputDetailImage: {fileID: 21300000, guid: 2834e3c9d636b3b4f93299e29f3b35f0, type: 3}
+      successDocName: Layer 3
+      successIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      successDetailType: 0
+      successDetailText: Layer 3. Document information about Lucy and every one u
+        known
+      successDetailImage: {fileID: 0}
+      failDocName: Layer 33
+      failIcon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      failDetailType: 1
+      failDetailText: 
+      failDetailImage: {fileID: 21300000, guid: c989d5343468a8e45bbbf78975dd1dde, type: 3}
+      anotherDoc1Name: Layer !@#
+      anotherDoc1Icon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: Maybe lucy here?
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Layer 123
+      anotherDoc2Icon: {fileID: 21300000, guid: 49a51c51541d11545a97c50b2ec36146, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Are you OK?
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Thx, now i can go help lucy.
+    finalFailMessage: I can't do anything. What can i still do ?
+  - customerName: Koyoi Konan
+    customerSprite: {fileID: 1573983383749121462, guid: a04c272c20e449446a5835dbbddd97e8, type: 3}
+    message: This USB drive has a weird file 'Homework.exe'. It keeps appearing on
+      every student's computer automatically.
+    successCustomerSprite: {fileID: 5473589094862935138, guid: fa7e44709fb6f3c49be4e6139b847fb9, type: 3}
+    failureCustomerSprite: {fileID: 6219217900029628429, guid: a15a40907bd514546819cd5dc50376b3, type: 3}
+    steps:
+    - taskType: check
+      subType: Check
+      inputDocName: USB file
+      inputIcon: {fileID: 21300000, guid: bf2b77f112f667f45b22d889393758e5, type: 3}
+      inputDetailType: 0
+      inputDetailText: 'Homework.exe
+
+
+        Student List.exe
+
+
+        Student
+        Home.exe
+
+
+        Student Mark.exe'
+      inputDetailImage: {fileID: 0}
+      successDocName: Homework.exe
+      successIcon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      successDetailType: 0
+      successDetailText: '-worm
+
+        -SSIS-621
+
+        -worm
+
+        -SSIS-643
+
+        -worm
+
+        -SSIS-686
+
+        -worm
+
+        -OFJE-412'
+      successDetailImage: {fileID: 0}
+      failDocName: Student List.exe
+      failIcon: {fileID: 21300000, guid: 05d914bcced146f40924d76aca21aeec, type: 3}
+      failDetailType: 0
+      failDetailText: 'Kouichi Akari
+
+        Chie Hachiro
+
+        Erina Aiko
+
+        Taro
+        Dan
+
+        Ayumu Hiroshi'
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Student Home.exe
+      anotherDoc1Icon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 'Itsuki Masaharu
+
+        Katsuo Masashi
+
+        Yume Takara
+
+        Jirou
+        Aina
+
+        Akemi Ryuuji'
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Student Mark.exe
+      anotherDoc2Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 'Takeo Yuko
+
+        Ami An
+
+        Junko Manami
+
+        Shigeko
+        Kimiko
+
+        Jun''ichi Hidemi'
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 0
+    - taskType: kill
+      subType: Worm
+      inputDocName: Homework.exe
+      inputIcon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      inputDetailType: 0
+      inputDetailText: '-worm
+
+        -SSIS-621
+
+        -worm
+
+        -SSIS-643
+
+        -worm
+
+        -SSIS-686
+
+        -worm
+
+        -OFJE-412'
+      inputDetailImage: {fileID: 0}
+      successDocName: New@Homework.txt
+      successIcon: {fileID: 21300000, guid: a71124bccca592b419a0218c4376e626, type: 3}
+      successDetailType: 0
+      successDetailText: '
+
+        -SSIS-621
+
+        -SSIS-643
+
+        -SSIS-686
+
+        -OFJE-412'
+      successDetailImage: {fileID: 0}
+      failDocName: The Newest txr
+      failIcon: {fileID: 21300000, guid: a71124bccca592b419a0218c4376e626, type: 3}
+      failDetailType: 0
+      failDetailText: Malware still active
+      failDetailImage: {fileID: 21300000, guid: 766b5f3bbf83c9a40be669fa5766f984, type: 3}
+      anotherDoc1Name: Unknown_Error
+      anotherDoc1Icon: {fileID: 21300000, guid: 5f0ea09a57954aa43acd693564da091d, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: Malware still active
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Unknown_Error???
+      anotherDoc2Icon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Malware still active
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: It was a Worm! Thank you for saving the school network.
+    finalFailMessage: It spread to the whole lab! We needed to identify it first.
+  - customerName: Sydney Sweeney
+    customerSprite: {fileID: -839386303671548635, guid: 32d0c74d185e2d94588ec9207738b0be, type: 3}
+    message: My compiler spit out this memory dump . I need to know what the error
+      message says in English.
+    successCustomerSprite: {fileID: -3416295993791310174, guid: dfcc12dfbec42aa4db4a098b059d57ee, type: 3}
+    failureCustomerSprite: {fileID: -4809521768903326091, guid: eca626f3b51b5154a8cf2cb510042b41, type: 3}
+    steps:
+    - taskType: decrypt
+      subType: Hex
+      inputDocName: Memory_Dump
+      inputIcon: {fileID: 21300000, guid: 6335233ea3ddd724e89a9262c580356b, type: 3}
+      inputDetailType: 0
+      inputDetailText: 45 72 72 6f 72 20 34 30 34
+      inputDetailImage: {fileID: 0}
+      successDocName: Readable_Log
+      successIcon: {fileID: 21300000, guid: 5519830b96d557e42ae5074aec086924, type: 3}
+      successDetailType: 0
+      successDetailText: Error 404
+      successDetailImage: {fileID: 0}
+      failDocName: Binary_Trash
+      failIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      failDetailType: 0
+      failDetailText: 30 31 30 30 30 31 30 31 20 30 31 31 31 30 30 31 30 20 30 31
+        31 31 30 30 31 30 20 30 31 31 30 31 31 31 31 20 30 31 31 31 30 30 31 30 20
+        30 30 31 30 30 30 30 30 20 30 30 31 31 30 31 30 30 20 30 30 31 31 30 30 30
+        30 20 30 30 31 31 30 31 30 30
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Readable_LogText
+      anotherDoc1Icon: {fileID: 21300000, guid: e73de7dc8ec841145a0f11ba3d959a3e, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 30 31 30 30 30 31 30 31 20 30 30 31 31 30 31 30 30 20 30 31
+        31 31 30 30 31 30 20 30 30 31 31 30 30 30 30 20 30 31 31 31 30 30 31 30 20
+        30 30 31 31 30 31 30 30 20 30 31 31 30 31 31 31 31 20 30 31 31 31 30 30 31
+        30
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Readable_Log_Text
+      anotherDoc2Icon: {fileID: 21300000, guid: 6335233ea3ddd724e89a9262c580356b, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 30 31 30 31 30 30 31 30 20 30 30 31 31 30 30 31 31 20 30 31
+        30 30 30 30 30 31 20 30 31 30 31 31 30 30 30 20 30 31 30 30 31 30 30 31 20
+        30 30 31 31 30 30 30 30 20 30 31 30 30 31 30 31 30 20 30 31 31 30 30 31 31
+        31 20 30 31 31 31 31 30 30 31 20 30 31 30 30 31 31 31 30 20 30 31 31 30 30
+        30 31 30 20 30 31 30 30 30 31 30 30
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Ah, 'Error 404'. I should have known!
+    finalFailMessage: That translation makes no sense.
+  taskDatabase: {fileID: 11400000, guid: e39059beda5348549bfa9164de0255bb, type: 2}

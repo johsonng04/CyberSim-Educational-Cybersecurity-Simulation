@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bb518f2cb0b9345ac84ca0f671e5e0, type: 3}
+  m_Name: Level-1
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelNumber: 1
+  customers:
+  - customerName: Koro Sensei
+    customerSprite: {fileID: 3846566537490264599, guid: 39dae084835c69845824097c4489a34b, type: 3}
+    message: Hi, student. Let me teach you how to play this game. Firstly, get the
+      document by click the button
+    successCustomerSprite: {fileID: 3732845848221908283, guid: a19ba848f9a577142ab7bd235c75d141, type: 3}
+    failureCustomerSprite: {fileID: -6342399361532993689, guid: e1439379cccd9d74ab5c81f57d819f67, type: 3}
+    steps:
+    - taskType: check
+      subType: Check
+      inputDocName: what is 1+2?
+      inputIcon: {fileID: 21300000, guid: 6335233ea3ddd724e89a9262c580356b, type: 3}
+      inputDetailType: 0
+      inputDetailText: 1+2=?
+      inputDetailImage: {fileID: 0}
+      successDocName: 3
+      successIcon: {fileID: 21300000, guid: 5519830b96d557e42ae5074aec086924, type: 3}
+      successDetailType: 1
+      successDetailText: 
+      successDetailImage: {fileID: 3732845848221908283, guid: a19ba848f9a577142ab7bd235c75d141, type: 3}
+      failDocName: Wrong!~
+      failIcon: {fileID: -6342399361532993689, guid: e1439379cccd9d74ab5c81f57d819f67, type: 3}
+      failDetailType: 0
+      failDetailText: Try again
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: 1
+      anotherDoc1Icon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      anotherDoc1DetailType: 1
+      anotherDoc1Text: 
+      anotherDoc1Image: {fileID: -6342399361532993689, guid: e1439379cccd9d74ab5c81f57d819f67, type: 3}
+      anotherDoc2Name: 2
+      anotherDoc2Icon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      anotherDoc2DetailType: 1
+      anotherDoc2Text: 
+      anotherDoc2Image: {fileID: -6342399361532993689, guid: e1439379cccd9d74ab5c81f57d819f67, type: 3}
+      isFinalStep: 0
+    - taskType: kill
+      subType: Worm
+      inputDocName: 3
+      inputIcon: {fileID: 21300000, guid: 5519830b96d557e42ae5074aec086924, type: 3}
+      inputDetailType: 1
+      inputDetailText: 
+      inputDetailImage: {fileID: 3732845848221908283, guid: a19ba848f9a577142ab7bd235c75d141, type: 3}
+      successDocName: Correct file
+      successIcon: {fileID: 21300000, guid: 18229a6f7fbec0f4ca16447b31e3b02b, type: 3}
+      successDetailType: 1
+      successDetailText: 
+      successDetailImage: {fileID: 3732845848221908283, guid: a19ba848f9a577142ab7bd235c75d141, type: 3}
+      failDocName: Wrong file
+      failIcon: {fileID: 21300000, guid: 1ddee50f44e977d42a2cf28dfaa294b5, type: 3}
+      failDetailType: 0
+      failDetailText: Try again
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Wrong file?
+      anotherDoc1Icon: {fileID: 21300000, guid: 1f44d65f525f57c439b28ffc3395bca3, type: 3}
+      anotherDoc1DetailType: 1
+      anotherDoc1Text: 
+      anotherDoc1Image: {fileID: -6342399361532993689, guid: e1439379cccd9d74ab5c81f57d819f67, type: 3}
+      anotherDoc2Name: Wrong file!
+      anotherDoc2Icon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      anotherDoc2DetailType: 1
+      anotherDoc2Text: 
+      anotherDoc2Image: {fileID: -6342399361532993689, guid: e1439379cccd9d74ab5c81f57d819f67, type: 3}
+      isFinalStep: 1
+    finalSuccessMessage: Well done! You did a great job. Remember, you can always
+      refer to the book in the upper right corner.
+    finalFailMessage: It's okay, everyone has a first time. Remember, you can always
+      refer to the book in the upper right corner.
+  - customerName: Zoe
+    customerSprite: {fileID: 21300000, guid: 906879cd9e321ad4f85bb7f1185b3896, type: 3}
+    message: My computer is acting strange. It keeps sending emails to everyone in
+      my contact list without me touching it!
+    successCustomerSprite: {fileID: 21300000, guid: 331bca1317bed77468709996c50594d8, type: 3}
+    failureCustomerSprite: {fileID: 21300000, guid: b33daeb1358d24b49a3e6f732e1516fb, type: 3}
+    steps:
+    - taskType: kill
+      subType: Worm
+      inputDocName: Network_Log.txt
+      inputIcon: {fileID: 21300000, guid: a45a0b44d01066945aefbd5666841082, type: 3}
+      inputDetailType: 0
+      inputDetailText: Traffic overload. Spreading automatically via shared folders
+        and email.
+      inputDetailImage: {fileID: 0}
+      successDocName: Clean_Log.txt
+      successIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      successDetailType: 0
+      successDetailText: Replication stopped. Network normal.
+      successDetailImage: {fileID: 0}
+      failDocName: System_Error
+      failIcon: {fileID: 21300000, guid: 916f112270ebda5448079ff1bb48f443, type: 3}
+      failDetailType: 0
+      failDetailText: Malware is still consuming bandwidth!
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: System_Error?
+      anotherDoc1Icon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: Malware is still consuming bandwidth!
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: System_Error!!!
+      anotherDoc2Icon: {fileID: 21300000, guid: 05d914bcced146f40924d76aca21aeec, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Malware is still consuming bandwidth!
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Thank you! The emails stopped sending.
+    finalFailMessage: It's still spreading! You didn't fix the root cause.
+  - customerName: Yanekeeee
+    customerSprite: {fileID: 21300000, guid: 46ddea267b690ed4ea27a9d29e7df642, type: 3}
+    message: Help me change it to 64
+    successCustomerSprite: {fileID: 21300000, guid: f389e06980eb54046a2204d8cbf90320, type: 3}
+    failureCustomerSprite: {fileID: 21300000, guid: 98f36b5c75fd09c48822d0d6cca750bd, type: 3}
+    steps:
+    - taskType: encrypt
+      subType: Base64
+      inputDocName: file.txt
+      inputIcon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      inputDetailType: 0
+      inputDetailText: Hello, my name is Yanekee
+      inputDetailImage: {fileID: 0}
+      successDocName: e_file.txt
+      successIcon: {fileID: 21300000, guid: 916f112270ebda5448079ff1bb48f443, type: 3}
+      successDetailType: 0
+      successDetailText: SGVsbG8sIG15IG5hbWUgaXMgWWFuZWtlZQ==
+      successDetailImage: {fileID: 0}
+      failDocName: h_file.txt
+      failIcon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      failDetailType: 0
+      failDetailText: 48 65 6c 6c 6f 2c 20 6d 79 20 6e 61 6d 65 20 69 73 20 59 61
+        6e 65 6b 65 65
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: 13_fiel.txt
+      anotherDoc1Icon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: Uryyb, zl anzr vf Lnarxrr
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: cas_file.txt
+      anotherDoc2Icon: {fileID: 21300000, guid: 1f44d65f525f57c439b28ffc3395bca3, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Hlmaiakeoymsnel,neYee
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Thx, 5 star~
+    finalFailMessage: 0 star (mad) :(
+  taskDatabase: {fileID: 11400000, guid: e39059beda5348549bfa9164de0255bb, type: 2}

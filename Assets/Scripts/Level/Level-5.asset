@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bb518f2cb0b9345ac84ca0f671e5e0, type: 3}
+  m_Name: Level-5
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelNumber: 5
+  customers:
+  - customerName: The Clown (Satoru Gojo)
+    customerSprite: {fileID: 5362294624995155325, guid: 6c64fbb74cc10a040ac90d9a0cb7f7de, type: 3}
+    message: Please add some software to protect me from being spied on by Ryomen
+      Sukuna.
+    successCustomerSprite: {fileID: -4474463473389336791, guid: f6c75b37a04b9a64fbcd2e0360c71da3, type: 3}
+    failureCustomerSprite: {fileID: -9075810574024052791, guid: d2eb146aae0fc2b4e8da0eafed03e71f, type: 3}
+    steps:
+    - taskType: protect
+      subType: Anti-Spyware Tools
+      inputDocName: Ryomen Sukuna.txt
+      inputIcon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      inputDetailType: 0
+      inputDetailText: 'The King of All Curses
+
+        
+
+        The Disgraced
+        One
+
+        
+
+        The Strongest Sorcerer of all Time'
+      inputDetailImage: {fileID: 0}
+      successDocName: Anti_Ryomen Sukuna.txt
+      successIcon: {fileID: 21300000, guid: 916f112270ebda5448079ff1bb48f443, type: 3}
+      successDetailType: 1
+      successDetailText: 
+      successDetailImage: {fileID: 21300000, guid: bf2b77f112f667f45b22d889393758e5, type: 3}
+      failDocName: AntiBlock_Ryomen Sukuna.txt
+      failIcon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      failDetailType: 0
+      failDetailText: 'The King of All Curses (inspect)
+
+
+        The Disgraced One(inspect)
+
+
+        The
+        Strongest Sorcerer of all Time(inspect)'
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Sukuna.txt
+      anotherDoc1Icon: {fileID: 21300000, guid: b71c93042ade35c48a08548bb53556ad, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 'The King of All Curses (inspect)
+
+
+        The Disgraced
+        One(inspect)
+
+
+        The Strongest Sorcerer of all Time(inspect)'
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Ryomen Sukuna
+      anotherDoc2Icon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 'The King of All Curses (inspect)
+
+
+        The Disgraced
+        One(inspect)
+
+
+        The Strongest Sorcerer of all Time(inspect)'
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Thanks for your help, they say Ryomen Sukuna is very strong.
+      Nah, I'd win.
+    finalFailMessage: "Your problem caused Satoru Gojo become Satoru\t\t\t\t\t\t\t\t\t\tGojo."
+  - customerName: Monkey Wu Kong
+    customerSprite: {fileID: -4798825762170945512, guid: 01f0f2c76bc91e8498a8ad8aebdfde20, type: 3}
+    message: GUGUGAGA (Help me convert it with the what 13 and the what 64)
+    successCustomerSprite: {fileID: -7125529199238360268, guid: 422f959ac53319a43bb4a4ba0e2d1af2, type: 3}
+    failureCustomerSprite: {fileID: 8805915824366220782, guid: 896a99322b88c854a9043a4441cb4e2c, type: 3}
+    steps:
+    - taskType: encrypt
+      subType: Rot13
+      inputDocName: The human truth
+      inputIcon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      inputDetailType: 0
+      inputDetailText: The chance of a human dying from choking on air is 100%.
+      inputDetailImage: {fileID: 0}
+      successDocName: THT + ROT 13
+      successIcon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      successDetailType: 0
+      successDetailText: Gur punapr bs n uhzna qlvat sebz pubxvat ba nve vf 100%.
+      successDetailImage: {fileID: 0}
+      failDocName: THT
+      failIcon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      failDetailType: 0
+      failDetailText: '--. ..- .-.
+
+        .--. ..- -. .- .--. .-.
+
+        -...
+        ...
+
+        -.
+
+        ..- .... --.. -. .-
+
+        --.- .-.. ...- .- -
+
+        ...
+        . -... --..
+
+        .--. ..- -... -..- ...- .- -
+
+        -... .-
+
+        -.
+        ...- .
+
+        ...- ..-.
+
+        .---- ----- -----  .-.-.-'
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: THT + check
+      anotherDoc1Icon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: LS0uIC4uLSAuLS4KLi0tLiAuLi0gLS4gLi0gLi0tLiAuLS4KLS4uLiAuLi4KLS4KLi4tIC4uLi4gLS0uLiAtLiAuLQotLS4tIC4tLi4gLi4uLSAuLSAtCi4uLiAuIC0uLi4gLS0uLgouLS0uIC4uLSAtLi4uIC0uLi0gLi4uLSAuLSAtCi0uLi4gLi0KLS4gLi4uLSAuCi4uLi0gLi4tLgouLS0tLSAtLS0tLSAtLS0tLSAgLi0uLS4t
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: THT + check?
+      anotherDoc2Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 4c 53 30 75 49 43 34 75 4c 53 41 75 4c 53 34 4b 4c 69 30 74
+        4c 69 41 75 4c 69 30 67 4c 53 34 67 4c 69 30 67 4c 69 30 74 4c 69 41 75 4c
+        53 34 4b 4c 53 34 75 4c 69 41 75 4c 69 34 4b 4c 53 34 4b 4c 69 34 74 49 43
+        34 75 4c 69 34 67 4c 53 30 75 4c 69 41 74 4c 69 41 75 4c 51 6f 74 4c 53 34
+        74 49 43 34 74 4c 69 34 67 4c 69 34 75 4c 53 41 75 4c 53 41 74 43 69 34 75
+        4c 69 41 75 49 43 30 75 4c 69 34 67 4c 53 30 75 4c 67 6f 75 4c 53 30 75 49
+        43 34 75 4c 53 41 74 4c 69 34 75 49 43 30 75 4c 69 30 67 4c 69 34 75 4c 53
+        41 75 4c 53 41 74 43 69 30 75 4c 69 34 67 4c 69 30 4b 4c 53 34 67 4c 69 34
+        75 4c 53 41 75 43 69 34 75 4c 69 30 67 4c 69 34 74 4c 67 6f 75 4c 53 30 74
+        4c 53 41 74 4c 53 30 74 4c 53 41 74 4c 53 30 74 4c 53 41 67 4c 69 30 75 4c
+        53 34 74
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 0
+    - taskType: encrypt
+      subType: Base64
+      inputDocName: THT + ROT 13
+      inputIcon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      inputDetailType: 0
+      inputDetailText: Gur punapr bs n uhzna qlvat sebz pubxvat ba nve vf 100%.
+      inputDetailImage: {fileID: 0}
+      successDocName: THT + ROT 13 + BASE 64
+      successIcon: {fileID: 21300000, guid: d829b0e05a3c20248a6a8a9c572d621a, type: 3}
+      successDetailType: 0
+      successDetailText: R3VyIHB1bmFwciBicyBuIHVoem5hIHFsdmF0IHNlYnogcHVieHZhdCBiYSBudmUgdmYgMTAwJS4=
+      successDetailImage: {fileID: 0}
+      failDocName: THT + ROT 13 + ?
+      failIcon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      failDetailType: 0
+      failDetailText: RyBmciBHehFmIloHehBSdgYTJ=3I1FicuVmIsFHYgVHdiBmdgASVHbwByIo5Hd0NnciZCYuUmMw4
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: THT + ROT 13 + check
+      anotherDoc1Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 4c 53 30 75 49 43 34 75 4c 53 41 75 4c 53 34 4b 4c 69 30 74
+        4c 69 41 75 4c 69 30 67 4c 53 34 67 4c 69 30 67 4c 69 30 74 4c 69 41 75 4c
+        53 34 4b 4c 53 34 75 4c 69 41 75 4c 69 34 4b 4c 53 34 4b 4c 69 34 74 49 43
+        34 75 4c 69 34 67 4c 53 30 75 4c 69 41 74 4c 69 41 75 4c 51 6f 74 4c 53 34
+        74 49 43 34 74 4c 69 34 67 4c 69 34 75 4c 53 41 75 4c 53 41 74 43 69 34 75
+        4c 69 41 75 49 43 30 75 4c 69 34 67 4c 53 30 75 4c 67 6f 75 4c 53 30 75 49
+        43 34 75 4c 53 41 74 4c 69 34 75 49 43 30 75 4c 69 30 67 4c 69 34 75 4c 53
+        41 75 4c 53 41 74 43 69 30 75 4c 69 34 67 4c 69 30 4b 4c 53 34 67 4c 69 34
+        75 4c 53 41 75 43 69 34 75 4c 69 30 67 4c 69 34 74 4c 67 6f 75 4c 53 30 74
+        4c 53 41 74 4c 53 30 74 4c 53 41 74 4c 53 30 74 4c 53 41 67 4c 69 30 75 4c
+        53 34 74
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: THT + ROT 13 + check?
+      anotherDoc2Icon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: LS0uIC4uLSAuLS4KLi0tLiAuLi0gLS4gLi0gLi0tLiAuLS4KLS4uLiAuLi4KLS4KLi4tIC4uLi4gLS0uLiAtLiAuLQotLS4tIC4tLi4gLi4uLSAuLSAtCi4uLiAuIC0uLi4gLS0uLgouLS0uIC4uLSAtLi4uIC0uLi0gLi4uLSAuLSAtCi0uLi4gLi0KLS4gLi4uLSAuCi4uLi0gLi4tLgouLS0tLSAtLS0tLSAtLS0tLSAgLi0uLS4t
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: GUGUGAGA (thx thx thx !!!!)
+    finalFailMessage: GUGUGAGA (....................)
+  - customerName: Penguin
+    customerSprite: {fileID: -6394888585581640024, guid: 21b41d03d84576e49b52690018c7ce28, type: 3}
+    message: We are seeing repeated login attempts. Analyze the traffic and then
+      block it actively!
+    successCustomerSprite: {fileID: -870988323187834228, guid: 47a8a5517952fa2499bef9e12f810ea2, type: 3}
+    failureCustomerSprite: {fileID: 181133614217849681, guid: 9e676122d6c47584281ba2cb45f88c06, type: 3}
+    steps:
+    - taskType: check
+      subType: Check
+      inputDocName: Server_Traffic
+      inputIcon: {fileID: 21300000, guid: 455e556d276a53544a73a7101303d1a3, type: 3}
+      inputDetailType: 0
+      inputDetailText: Abnormal traffic patterns detected. 500 requests/sec.
+      inputDetailImage: {fileID: 0}
+      successDocName: Intrusion_Alert
+      successIcon: {fileID: 21300000, guid: 1f44d65f525f57c439b28ffc3395bca3, type: 3}
+      successDetailType: 0
+      successDetailText: 'Pattern identified: Malicious behavior.'
+      successDetailImage: {fileID: 0}
+      failDocName: Missed_Alert
+      failIcon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      failDetailType: 0
+      failDetailText: Logs ignored.
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Attack_Graph
+      anotherDoc1Icon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      anotherDoc1DetailType: 1
+      anotherDoc1Text: 
+      anotherDoc1Image: {fileID: 21300000, guid: 2834e3c9d636b3b4f93299e29f3b35f0, type: 3}
+      anotherDoc2Name: Safe_Traffic
+      anotherDoc2Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: None
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 0
+    - taskType: protect
+      subType: IDS/IPS
+      inputDocName: Intrusion_Alert
+      inputIcon: {fileID: 21300000, guid: 1f44d65f525f57c439b28ffc3395bca3, type: 3}
+      inputDetailType: 0
+      inputDetailText: 'Pattern identified: Malicious behavior.'
+      inputDetailImage: {fileID: 0}
+      successDocName: Attack_Blocked
+      successIcon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      successDetailType: 0
+      successDetailText: IPS active. Threat stopped
+      successDetailImage: {fileID: 0}
+      failDocName: Server_Hacked
+      failIcon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      failDetailType: 0
+      failDetailText: Defense failed
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Attack_Graph
+      anotherDoc1Icon: {fileID: 21300000, guid: c7e29d58e31c43e4885bf6183e65f8c4, type: 3}
+      anotherDoc1DetailType: 1
+      anotherDoc1Text: 
+      anotherDoc1Image: {fileID: 21300000, guid: 766b5f3bbf83c9a40be669fa5766f984, type: 3}
+      anotherDoc2Name: Safe_Traffic
+      anotherDoc2Icon: {fileID: 21300000, guid: 45bbfa1de91fb654cafd3b6a27041f33, type: 3}
+      anotherDoc2DetailType: 1
+      anotherDoc2Text: 
+      anotherDoc2Image: {fileID: 21300000, guid: 6dfbbab33e184c94ca6b936ff32a3c07, type: 3}
+      isFinalStep: 1
+    finalSuccessMessage: Attack blocked automatically. Good job deploying the IPS.
+    finalFailMessage: They breached the firewall! We needed active prevention.
+  taskDatabase: {fileID: 11400000, guid: e39059beda5348549bfa9164de0255bb, type: 2}

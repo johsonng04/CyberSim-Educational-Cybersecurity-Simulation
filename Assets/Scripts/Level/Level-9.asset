@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bb518f2cb0b9345ac84ca0f671e5e0, type: 3}
+  m_Name: Level-9
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelNumber: 9
+  customers:
+  - customerName: Funny Valentine
+    customerSprite: {fileID: -2424553518018739129, guid: a34131783a15dce4f87d983071b43cf0, type: 3}
+    message: I wonder if you would be willing to do your part for the country? Help
+      get rid of some of those sneaky rats.
+    successCustomerSprite: {fileID: -4927682170010026024, guid: cac6c6b9e172f164faaa4f96aa7a2d89, type: 3}
+    failureCustomerSprite: {fileID: -6253661243646476274, guid: e9152e8a8b354aa44bc9b8412b66c084, type: 3}
+    steps:
+    - taskType: kill
+      subType: Spyware
+      inputDocName: Country_Secret
+      inputIcon: {fileID: 21300000, guid: 916f112270ebda5448079ff1bb48f443, type: 3}
+      inputDetailType: 0
+      inputDetailText: 'Left Arm: Located in Monument Valley, Arizona.
+
+
+        Eyes:
+        On a mountaintop in the Rocky Mountains.
+
+
+        Heart: Located in the
+        San Diego desert.
+
+
+        Spine: At the "Green Tombstone" site on the prairie
+        near Kansas City.
+
+
+        Right Arm & Ears: At "Sugar Mountain," near Lake
+        Michigan, west of Chicago.
+
+
+        Right arm & ears .txt'
+      inputDetailImage: {fileID: 0}
+      successDocName: Clean_Country_Secret
+      successIcon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      successDetailType: 0
+      successDetailText: 'Left Arm: Located in Monument Valley, Arizona.
+
+
+        Eyes:
+        On a mountaintop in the Rocky Mountains.
+
+
+        Heart: Located in the
+        San Diego desert.
+
+
+        Spine: At the "Green Tombstone" site on the prairie
+        near Kansas City.
+
+
+        Right Arm & Ears: At "Sugar Mountain," near Lake
+        Michigan, west of Chicago.
+
+
+'
+      successDetailImage: {fileID: 0}
+      failDocName: UNClean_Country_Secret
+      failIcon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      failDetailType: 1
+      failDetailText: 
+      failDetailImage: {fileID: 21300000, guid: a45a0b44d01066945aefbd5666841082, type: 3}
+      anotherDoc1Name: Head
+      anotherDoc1Icon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: Held by Johnny Joestar
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Left Hand
+      anotherDoc2Icon: {fileID: 21300000, guid: 05d914bcced146f40924d76aca21aeec, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: Safeguarded by Gyro Zeppelin
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Thank you for your help. When the country becomes stronger,
+      it will not let you down.
+    finalFailMessage: It's okay, you've already tried. I'll take care of it myself
+      next.
+  - customerName: 
+    customerSprite: {fileID: -3187042837361198535, guid: a52cc700353dddf459ac94a74ac29816, type: 3}
+    message: I found this string in my database config. It looks like garbage, but
+      the pattern gives it away
+    successCustomerSprite: {fileID: 5217001507704778425, guid: 33abb03f098cef2438c7b43327fb3ed9, type: 3}
+    failureCustomerSprite: {fileID: 4861693547479090247, guid: e0911ac82372979409a249e80c1f420b, type: 3}
+    steps:
+    - taskType: decrypt
+      subType: Hex
+      inputDocName: Encrypted_Document
+      inputIcon: {fileID: 21300000, guid: a7c4f222a4ec33f4ca71d2f3794da029, type: 3}
+      inputDetailType: 0
+      inputDetailText: 41 64 6d 69 6e 31 32 33 0a 50 61 73 73 77 6f 72 64 31 32 33
+        0a 31 32 33 34 35 36 0a 41 64 6d 69 6e 0a 50 61 73 73 77 6f 72 64
+      inputDetailImage: {fileID: 0}
+      successDocName: Decrypted_Password
+      successIcon: {fileID: 21300000, guid: 5519830b96d557e42ae5074aec086924, type: 3}
+      successDetailType: 0
+      successDetailText: 'Admin123
+
+        Password123
+
+        123456
+
+        Admin
+
+        Password'
+      successDetailImage: {fileID: 0}
+      failDocName: Unknown Document
+      failIcon: {fileID: 21300000, guid: 6335233ea3ddd724e89a9262c580356b, type: 3}
+      failDetailType: 0
+      failDetailText: 41743a07133324a66271315f4333360763723462d07346166a633d7495f0563607a397e62366331610e7
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: UNMessage
+      anotherDoc1Icon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 57435b4643613b3144634b54537d5b6e77568556c358444432432477d425267d466947624666a736836a734a6c6314a6d4b7345d6d4e453a
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: known message
+      anotherDoc2Icon: {fileID: 21300000, guid: 1f44d65f525f57c439b28ffc3395bca3, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 794510965960940252288797108931456691368672287489405601015033086179286809208747609178249385890097149096759852613655497818931297848216829989487226588048575640142704775551323796414515237462343645428584447952658678210511413547357395231134271661021359695362314429524849371871101457654035902799344037420073105785390621983874478084784896833214457138687519435064302184531910484810053706146806749192781911979399520614196634287544406437451237181921799983910159195618146751426912397489409071864942319615679452080951465502252316038819301420937621378559566389377870830390697920773467221825625996615014215030680384477345492026054146659252014974428507325186660021324340881907104863317346496514539057962685610055081066587969981635747363840525714591028970641401109712062804390397595156771577004203378699360072305587631763594218731251471205329281918261861258673215791984148488291644706095752706957220917567116722910981690915280173506712748583222871835209353965725121083579151369882091444210067510334671103141267111369908658516398315019701651511685171437657618351556508849099898599823873455283316355076479185358932261854896321329330898570642046752590709154814165498594616371802709819943099244889575712828905923233260972997120844335732654893823911932597463667305836041428138830320382490375898524374417029132765618093773444030707469211201913020330380197621101100449293215160842444859637669838952286847831235526582131449576857262433441893039686426243410773226978028073189154411010446823252716201052652272111660396665573092547110557853763466820653109896526918620564769312570586356620185581007293606598764861179104533488503461136576867532494416680396265797877185560845529654126654085306143444318586769751456614068007002378776591344017127494704205622305389945613140711270004078547332699390814546646458807972708266830634328587856983052358089330657574067954571637752542021149557615814002501262285941302164715509792592309907965473761255176567513575178296664547791745011299614890304639947132962107340437518957359614589019389713111790429782856475032031986915140287080859904801094121472213179476477726224142548545403321571853061422881375850430633217518297986622371721591607716692547487389866549494501146540628433663937900397692656721
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Of course. It was a database password.
+    finalFailMessage: That's not readable text.
+  - customerName: Gyaru san
+    customerSprite: {fileID: 1862528673631986662, guid: b41209bad6dc45d42ae4ee99535c60e7, type: 3}
+    message: Change it to dot and dash first, second is the end with =, and last
+      is use with the famous person cipher with 3.
+    successCustomerSprite: {fileID: 85049234008908207, guid: 75bfa4d7bbb9cb844a308103e515cc90, type: 3}
+    failureCustomerSprite: {fileID: 3739402169347178854, guid: 8f89dc2684f92e04faf89aab1f8cb7b8, type: 3}
+    steps:
+    - taskType: encrypt
+      subType: Morse
+      inputDocName: Message
+      inputIcon: {fileID: 21300000, guid: 1ddee50f44e977d42a2cf28dfaa294b5, type: 3}
+      inputDetailType: 0
+      inputDetailText: LOVE
+      inputDetailImage: {fileID: 0}
+      successDocName: Message +1
+      successIcon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      successDetailType: 0
+      successDetailText: .-.. --- ...- .
+      successDetailImage: {fileID: 0}
+      failDocName: Message +0
+      failIcon: {fileID: 21300000, guid: 05d914bcced146f40924d76aca21aeec, type: 3}
+      failDetailType: 0
+      failDetailText: -.-- -... .. .-.
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Mess
+      anotherDoc1Icon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: --. .-. ----. .--- . -.. -...- -...-
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: age
+      anotherDoc2Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: --. .-. ----. .--- . -.. -...- -...-
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 0
+    - taskType: encrypt
+      subType: Base64
+      inputDocName: Message +1
+      inputIcon: {fileID: 21300000, guid: f898d6cae7acb3245a1e4e3c4e74ac96, type: 3}
+      inputDetailType: 0
+      inputDetailText: .-.. --- ...- .
+      inputDetailImage: {fileID: 0}
+      successDocName: Message +2
+      successIcon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      successDetailType: 0
+      successDetailText: Li0uLiAtLS0gLi4uLSAu
+      successDetailImage: {fileID: 0}
+      failDocName: correct way
+      failIcon: {fileID: 21300000, guid: 6335233ea3ddd724e89a9262c580356b, type: 3}
+      failDetailType: 0
+      failDetailText: LgiL0iu4LuiLAStALuS0
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: base 64
+      anotherDoc1Icon: {fileID: 21300000, guid: 37573fd188cec52408753811a7426511, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: YtvY0vh4YhvYNFgNYhF0
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Hex
+      anotherDoc2Icon: {fileID: 21300000, guid: d829b0e05a3c20248a6a8a9c572d621a, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 59 74 76 59 30 76 68 34 59 68 76 59 4e 46 67 4e 59 68 46 30
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 0
+    - taskType: encrypt
+      subType: Caesar cipher
+      inputDocName: Message +2
+      inputIcon: {fileID: 21300000, guid: 9341fe831c9d90940beed51637256249, type: 3}
+      inputDetailType: 0
+      inputDetailText: Li0uLiAtLS0gLi4uLSAu
+      inputDetailImage: {fileID: 0}
+      successDocName: Message +3
+      successIcon: {fileID: 21300000, guid: 5d65aa55e1f03ac4a8579c364b81caa9, type: 3}
+      successDetailType: 0
+      successDetailText: LuASLuAiLt0iLu0iLg4S
+      successDetailImage: {fileID: 0}
+      failDocName: Message +4
+      failIcon: {fileID: 21300000, guid: 463da780a411cf8459dc3fbc0ec13279, type: 3}
+      failDetailType: 0
+      failDetailText: YhNFYhNvYg0vYh0vYt4F
+      failDetailImage: {fileID: 0}
+      anotherDoc1Name: Message +5
+      anotherDoc1Icon: {fileID: 21300000, guid: 72d6c3c7c3ad9234fa9d239544ceb4b4, type: 3}
+      anotherDoc1DetailType: 0
+      anotherDoc1Text: 59 68 4e 46 59 68 4e 76 59 67 30 76 59 68 30 76 59 74 34 46
+      anotherDoc1Image: {fileID: 0}
+      anotherDoc2Name: Message +6
+      anotherDoc2Icon: {fileID: 21300000, guid: a71124bccca592b419a0218c4376e626, type: 3}
+      anotherDoc2DetailType: 0
+      anotherDoc2Text: 59 68 4e 46 59 68 4e 76 59 67 30 76 59 68 30 76 59 74 34 46
+      anotherDoc2Image: {fileID: 0}
+      isFinalStep: 1
+    finalSuccessMessage: Message secured.Thank you very much <3
+    finalFailMessage: Never mind~ i will go find another way.
+  taskDatabase: {fileID: 11400000, guid: e39059beda5348549bfa9164de0255bb, type: 2}
